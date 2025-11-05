@@ -8,7 +8,7 @@ Telegram-бот + Django REST API для ежедневных уведомлен
 - **Bot:** aiogram  
 - **External API:** OpenWeather  
 - **Other:** requests, docker-compose *(опционально)*
----
+
 ## Архитектура проекта
 ```
 weather-reminder-bot/
@@ -30,7 +30,7 @@ weather-reminder-bot/
 ├── README.md
 └── docker-compose.yml             
 ````
----
+
 ## Структура базы данных
 ### **Subscriber**
 | Поле | Тип | Описание |
@@ -40,7 +40,7 @@ weather-reminder-bot/
 | `time_local` | TimeField | Время отправки прогноза |
 | `active` | BooleanField | Подписка активна |
 | `created_at` | DateTimeField | Дата создания записи |
----
+
 ## Команды бота (aiogram)
 | Команда                      | Действие                                                |
 | ---------------------------- | ------------------------------------------------------- |
