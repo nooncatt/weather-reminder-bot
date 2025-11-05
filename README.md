@@ -1,7 +1,7 @@
 # Проект: Weather Reminder (Django + DRF + PostgreSQL + aiogram)
+
 Telegram-бот + Django REST API для ежедневных уведомлений о погоде.  
 Бот принимает подписку на прогноз по городу и времени, а Django хранит данные пользователей и рассылает уведомления через OpenWeather API.
----
 ## Стек технологий
 - **Backend:** Django, Django REST Framework  
 - **Database:** PostgreSQL  
