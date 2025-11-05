@@ -2,21 +2,16 @@
 
 Telegram-бот + Django REST API для ежедневных уведомлений о погоде.  
 Бот принимает подписку на прогноз по городу и времени, а Django хранит данные пользователей и рассылает уведомления через OpenWeather API.
-
 ---
-
 ## Стек технологий
 - **Backend:** Django, Django REST Framework  
 - **Database:** PostgreSQL  
 - **Bot:** aiogram  
 - **External API:** OpenWeather  
-- **Other:** requests, docker-compose *(опционально)*  
-
+- **Other:** requests, docker-compose *(опционально)*
 ---
-
 ## Архитектура проекта
 ```
-
 weather-reminder-bot/
 ├── backend/
 │   ├── manage.py
@@ -35,13 +30,9 @@ weather-reminder-bot/
 │   └── .env.example
 ├── README.md
 └── docker-compose.yml             
-
 ````
-
 ---
-
 ## Структура базы данных
-
 ### **Subscriber**
 
 | Поле | Тип | Описание |
@@ -52,7 +43,6 @@ weather-reminder-bot/
 | `active` | BooleanField | Подписка активна |
 | `created_at` | DateTimeField | Дата создания записи |
 ---
-
 ## Команды бота (aiogram)
 
 | Команда                      | Действие                                                |
